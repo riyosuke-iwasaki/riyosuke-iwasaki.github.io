@@ -1,0 +1,219 @@
+/* * {
+  margin: 0;
+  padding: 0;
+}
+
+.gradient {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to top,
+    #fcc5e4 0%,
+    #fda34b 15%,
+    #ff7882 35%,
+    #c8699e 52%,
+    #7046aa 71%,
+    #0c1db8 87%,
+    #020f75 100%
+  );
+} */
+
+
+h2 {
+  border-bottom: 5px double red;
+}
+
+h3 {
+  font-size: 5rem;
+  font-style: italic;
+  letter-spacing: .1em;
+  color: #000;
+  text-shadow: -4px 3px 0 #fa4141, -8px 6px 0 #000;
+  text-align: center;
+}
+
+
+#header{
+  height: 70px;/*高さ指定*/
+  width:100%;/*横幅指定*/
+  /*以下はレイアウトのためのCSS*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:#333;
+  color:#fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/*JSを使いfixedクラスが付与された際の設定*/
+#header.fixed{
+  position: fixed;/*fixedを設定して固定*/
+    z-index: 999;/*最前面へ*/
+    top:0;/*位置指定*/
+    left:0;/*位置指定*/
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+h1{
+  font-size:1.2rem;
+}
+
+h2{
+  font-size:1.2rem;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+p{
+  margin-top:20px;  
+}
+
+small{
+  background:#333;
+  color:#ffffff;
+  display: block;
+  text-align: center;
+  padding:20px;
+}
+
+
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li a{
+  display: block;
+  text-decoration: none;
+  color: #666666;
+  padding: 10px;
+  transition:all 0.3s;
+}
+
+nav ul li.current a,
+nav ul li a:hover{
+  color:#fff; 
+}
+
+
+section{
+  padding:30px;
+}
+
+section:nth-child(2n){
+  background:#f3f3f3; 
+}
+
+
+.btn,
+#BB.btn,
+button.btn {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius:30px;
+  text-align: left 40%; 
+  margin-left: 20%;
+ 
+ 
+  
+}
+
+#BB.btn-flat {
+  overflow: hidden;
+
+  padding: 1.5rem 6rem;
+
+  color: #fff;
+  border-radius: 30px;
+  background: #000;
+}
+
+#BB.btn-flat span {
+  position: relative;
+}
+
+#BB.btn-flat:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 150%;
+  height: 500%;
+
+  content: "";
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+
+  background: #00b7ee;
+}
+
+#BB.btn-flat:hover:before {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+
+
+
+
+
+#EB.btn-flat {
+  overflow: hidden;
+  padding: 1.5rem 6rem;
+  color: #fff;
+  border-radius: 0;
+  background: #000;
+  text-align: left 60%;
+  border-radius:30px;
+}
+
+#EB.btn-flat span {
+  position: relative;
+}
+
+#EB.btn-flat:before {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 150%;
+  height: 500%;
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-70%) rotate(135deg);
+  transform: translateX(-98%) translateY(-70%) rotate(135deg);
+  background: #00ff2fcc;
+}
+
+#EB.btn-flat:hover:before {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(135deg);
+  transform: translateX(-9%) translateY(-25%) rotate(135deg);
+}  
+
+
+
+
+
